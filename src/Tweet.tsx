@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Tweet as EmbeddedTweet } from "react-tweet";
 import s from "./Tweet.module.css";
 
@@ -6,7 +6,7 @@ function Tweet() {
   const [inputValue, setInputValue] = useState("");
   const [tweetId, setTweetId] = useState("");
 
-  const extractTweetId = (urlOrId) => {
+  const extractTweetId = (urlOrId: string) => {
     const tweetIdMatch = urlOrId.match(/(\d{10,})$/);
     return tweetIdMatch ? tweetIdMatch[0] : "";
   };
