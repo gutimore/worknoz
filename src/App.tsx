@@ -21,7 +21,7 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>{`Welcome to WorkNoz ${count}`}</p>
+        <p>{`Welcome to WorkNoz ${count} &&  ${count}`}</p>
       </div>
     </>
   );
